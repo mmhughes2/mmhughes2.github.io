@@ -3,6 +3,10 @@ body {
     background: url(images/sky.jpg);
     font-family: Arial, Helvetica, sans-serif;
 }
+#main-header h1 {
+    background-color: blanchedalmond;
+    color: cadetblue;
+}
 #content {
     background: white;
     width: 70%;
@@ -13,11 +17,6 @@ body {
     box-shadow: 10px 10px lightblue; /* Drop Shadow */
 }
 
-header, footer {
-    background: darkblue;
-    padding:5px;
-    color:white;
-}
 /* Navigation */
 #main-nav ul {
     padding-left: 0;
