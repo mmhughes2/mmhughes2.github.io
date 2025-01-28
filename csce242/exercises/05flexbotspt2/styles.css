@@ -1,6 +1,6 @@
 /* Structure */
 body {
-    background:url(images/bg.jpg);
+    background:#CDECEF;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -8,41 +8,44 @@ body {
     background:white;
     width:70%;
     margin:auto; /* center */
-    padding:5px;
-    border: 1px solid darkblue;
     border-radius:5px;
     box-shadow: 10px 10px lightblue;
 }
 
 header, footer {
-    background:darkblue;
+    background:#2B91AD;
     color:white;
 }
 
-.idea {
-    padding: 5px;
+main {
+    padding:5px;
 }
 
-.idea:nth-child(even) {
-    background: lightcoral;
+.idea {
+    padding:5px;
+}
+
+.idea:nth-child( even ) {
+    background:#CDECEF;
 }
 
 .idea-img {
-    margin-top: 20px;
-    padding: 5px;
+    margin-top:20px;
+    padding:5px;
     text-align: center;
 }
 
 .gallery {
-    background: lightpink;
+    background:#FFB58A;
 }
 
 .links {
-    background: lightblue;
+    background:#D3DDEA;
 }
-.tile {
-    text-align: center;
-    padding: 5px;
+
+.tile, .node {
+    text-align:center;
+    padding:5px;
 }
 
 /* Navigation */
@@ -52,9 +55,9 @@ header, footer {
 
 #main-nav li {
     list-style-type: none;  /* remove the bullets */
-    background: blanchedalmond;
+    background:#FFB58A;
     text-align: center;
-    border-bottom: 1px solid white;
+    border-bottom:1px solid white;
 }
 
 #main-nav a {
@@ -77,40 +80,30 @@ footer p {
     text-align:center;
 }
 
-/* Larger Resolution*/
-@media only screen and (min-width: 768px) {
+/* Larger screens */
+@media only screen and (min-width: 768px) { 
     .columns {
-        display: flex;
+        display:flex;
     }
+
     #main-nav li {
-        flex: 1;
+        flex:1;
     }
 
     #main-nav li:not(:last-child) {
         border-right: 1px solid white;
     }
+
     .gallery {
-        flex-wrap: wrap;
-    }
-
-    .one {
-        flex: 1;
-    }
-
-    .two {
-        flex: 2;
+        flex-wrap:wrap;
+        justify-content: space-between;
     }
 
     .three {
-        flex: 3;
-    }
-    
-    .tile {
-        width:45%
+        flex:6;
     }
 
     .node {
-        width: 30%;
+        flex-basis:20%;
     }
-   
 }

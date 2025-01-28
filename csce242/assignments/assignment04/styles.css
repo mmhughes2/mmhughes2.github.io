@@ -1,0 +1,109 @@
+/* Structure */
+body {
+    background: white;
+}
+#main-header {
+    background-color: black;
+    color:white;
+}
+
+#top-header {
+    background-color: black;
+    color:white;
+    padding-left: 200px;
+    padding-bottom: 0;
+}
+
+#first-footer {
+    text-align: left;
+    justify-content: left;
+}
+
+h4 {
+    color: #73000a;
+}
+
+#sub-header {
+    background-color: #73000a;
+    color: white;
+    padding: 5px;
+    padding-left: 200px;
+}
+
+#main-image {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.node {
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    background: lightgrey;
+    padding: 10px;
+}
+
+#footer-nav li {
+    text-align: right;
+    justify-content: center;
+}
+
+#footer-nav a {
+    text-decoration: none;
+    display: block;
+    list-style-type: none;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left: 0;
+}
+
+#main-nav li {
+    list-style: none;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+#main-nav a {
+    color: black;
+    text-decoration: none;
+    border-bottom:3px solid lightgray;
+}
+
+/* Typography */
+ #sub-header {
+    font-size: 11px;
+ }
+
+ #top-row {
+    font-size: 15px;
+    padding-bottom: 0;
+ }
+
+ /* Larger Screens */
+ @media only screen and (min-width: 768px) { 
+    .columns, footer {
+        display:flex;
+    }
+
+    #main-nav li {
+        flex:2;
+    }
+
+    .gallery {
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
+
+    .one {
+        flex:6;
+    }
+
+    .node {
+        flex-basis:30%;
+    }
+ }
