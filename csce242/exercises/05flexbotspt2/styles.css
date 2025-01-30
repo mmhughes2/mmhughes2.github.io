@@ -61,6 +61,29 @@ main {
     text-align:center;
     padding:5px;
 }
+
+/* Animations */
+#animation-fun {
+    background: lightblue;
+    padding: 20px;
+    height: 200px;
+    position: relative;
+}
+#ball {
+    height: 30px;
+    width: 30px;
+    background: white;
+    border-radius: 50px;
+    animation-name: fun;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fun {
+    0% {background-color: red;}
+    100% {background-color: yellow;}
+}
+
 /* Playing with Positioning */
 #main-logo {
     position: absolute;
@@ -143,7 +166,7 @@ footer p {
         flex-basis:20%;
     }
 
-    .idea-img p {
+    .main-img p, .main-img h3 {
         position: absolute;
         bottom: 0;
     }
