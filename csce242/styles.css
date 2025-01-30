@@ -17,6 +17,11 @@ body {
     border-radius: 5px; 
 }
 
+hr.rounded {
+    border-top: 8px solid black;
+    border-radius: 5px;
+  }
+
 #main-footer {
     text-align: center;
 }
@@ -34,8 +39,11 @@ body {
 @media (min-width: 900px) {
     .flex-container {
         display: flex;
+        flex-wrap: wrap;
 
     .column {
+        flex-wrap: wrap;
         flex: 3;
     }
+}
 }
