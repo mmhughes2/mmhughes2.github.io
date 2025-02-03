@@ -35,6 +35,12 @@ body {
     text-align: center;
 }
 
+.centered-header {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0; /* Adds vertical space around the header */
+}
+
 /* Larger Resolutions */
 @media (min-width: 900px) {
     .flex-container {
