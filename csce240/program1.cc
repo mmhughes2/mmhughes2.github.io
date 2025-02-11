@@ -1,4 +1,4 @@
-// Copyright Mackenzie Hughes
+// Copyright Mackenzie Hughes 2025
 #include <iostream>
 #include <string>
 #include <cmath>

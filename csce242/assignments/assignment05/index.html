@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7: Introduction to JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Assignment 7</h1>
+    <h2>Introduction to JavaScript</h2>
+    <div class="container">
+        <div class="column hello" onclick="addHello()">
+            <p id="helloText">Say Hello</p>
+        </div>
+        <div class="column color-picker">
+            <input type="color" id="colorInput" onchange="changeColor()" />
+            <span id="star">&#9733;</span>
+        </div>
+        <div class="column image-change">
+            <img src="200x200.png" alt="Placeholder Image" id="imageChange">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

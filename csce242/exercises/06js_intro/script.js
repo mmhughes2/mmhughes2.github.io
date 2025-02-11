@@ -11,3 +11,6 @@ document.getElementById("btn-color").onclick = () => {
     messageP.classList.toggle("sad");
 
 }
+
+var x = document.createElement("input");
+x.setAttribute("type", "You are very");
