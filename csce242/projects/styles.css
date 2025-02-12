@@ -1,30 +1,124 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 20px 0;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 60px);
+  background-color: #0000FF;
+}
+
+.header h1 {
+  color: white;
+  background-color: white;
+  color: black;
+  padding: 20px 30px;
+  font-size: 24px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.text-section {
+  width: 50%;
+}
+
+.image-section {
+  width: 45%;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  width: 100vw;
+  height: 100vh;
+  @media screen and (max-width: 60em) {
+    grid-template-rows: repeat(4, 1fr);
   }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: white;
+}
+
+.grid-1 {
+  background-color: lightslategray;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  @media screen and (max-width: 60em) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 1;
   }
-  
-  .topnav a {
-    float: right;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    justify-content: space-around;
+}
+
+.grid-2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row: 1;
+  @media screen and (max-width: 60em) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 2;
   }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    text-decoration: underline;
-    color: black;
+}
+
+.grid-3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+  @media screen and (max-width: 60em) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 3;
   }
-  
-  .topnav a.active {
-    background-color: blue;
-    color: white;
+}
+
+.grid-3 img {
+  margin: 5px;
+}
+
+.grid-4 {
+  background-color: lightslategray;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row: 2;
+  @media screen and (max-width: 60em) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 4;
   }
+}
+
+.callout {
+  margin: 0;
+  text-align: center;
+}
+
+
