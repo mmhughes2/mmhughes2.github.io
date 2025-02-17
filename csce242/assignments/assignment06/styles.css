@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    text-decoration: underline;
+  }
+  
+  #exercise1, #exercise2 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #transport-img {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .heart {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 20px auto;
+  }
+  
+  .color-btn {
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .menu {
+    display: none;
+    text-align: center;
+  }
+  
+  .toggle-btn {
+    cursor: pointer;
+  }
+  
+  .nav-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .nav-list li {
+    display: block;
+  }
+  
+  .nav-list li:not(:last-child)::after {
+    content: '|';
+    padding: 0 10px;
+  }
+  
+  .nav-list li:hover {
+    color: #2a9d8f;
+  }
+  
+  @media (min-width: 769px) {
+    /* On larger screens, display menu items horizontally next to each other */
+    nav ul {
+      display: flex;
+      justify-content: center; /* Ensures items are aligned horizontally */
+    }
+    
+    nav li {
+      display: inline-block;
+      padding: 10px 20px;
+    }
+  
+    .nav-list {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    .nav-list li {
+      display: block;
+      padding: 10px;
+    }
+  
+    .nav-list li::after {
+      content: none;
+    }
+    
+    /* On larger screens, hide the mobile menu toggle button */
+    .menu {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* On mobile, show the toggle button and hide the horizontal nav */
+    nav ul {
+      display: none; /* Hide the horizontal navigation by default */
+    }
+    
+    .toggle-btn {
+      display: block;
+      margin: 10px auto;
+      text-align: center;
+    }
+  
+    .nav-list {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    .nav-list li {
+      display: block;
+      padding: 10px;
+    }
+  
+    .nav-list li::after {
+      content: none;
+    }
+    
+    /* On small screens, hide the horizontal menu and only show the toggle menu */
+    nav {
+      text-align: left;
+    }
+  
+    .menu {
+      display: block;
+    }
+  }
+  
