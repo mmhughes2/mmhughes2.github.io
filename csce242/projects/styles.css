@@ -1,3 +1,9 @@
+:root {
+  --main-background-color: white;
+  --primary-color: #0000FF;
+  --gallery-color:#FFB58A;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -9,7 +15,7 @@ body, html {
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: var(--main-background-color);
   padding: 20px 0;
 }
 
@@ -25,12 +31,12 @@ body, html {
   justify-content: center;
   align-items: center;
   height: calc(100% - 60px);
-  background-color: #0000FF;
+  background-color: var(--primary-color);
 }
 
 .header h1 {
   color: white;
-  background-color: white;
+  background-color: var(--main-background-color);
   color: black;
   padding: 20px 30px;
   font-size: 24px;
@@ -67,7 +73,7 @@ body, html {
 }
 
 .grid-1 {
-  background-color: lightslategray;
+  background-color: var(--primary-color);
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row: 1;
@@ -105,7 +111,7 @@ body, html {
 }
 
 .grid-4 {
-  background-color: lightslategray;
+  background-color: var(--primary-color);
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row: 2;
