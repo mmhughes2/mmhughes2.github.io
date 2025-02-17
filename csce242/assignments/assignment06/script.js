@@ -19,13 +19,13 @@ document.getElementById('menu-toggle').addEventListener('click', function() {
     const transport = this.value.toLowerCase();
     const img = document.getElementById('transport-img');
     if (transport === 'bike') {
-      img.src = 'https://path/to/bike-image.png';
+      img.src = 'images/bike.png';
     } else if (transport === 'scooter') {
-      img.src = 'https://path/to/scooter-image.png';
+      img.src = 'images/scooter.jpeg';
     } else if (transport === 'car') {
-      img.src = 'https://path/to/car-image.png';
+      img.src = 'images/car.png';
     } else if (transport === 'skateboard') {
-      img.src = 'https://path/to/skateboard-image.png';
+      img.src = 'images.skateboard.png';
     } else {
       img.src = '';
     }
