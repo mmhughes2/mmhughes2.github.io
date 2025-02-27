@@ -142,3 +142,60 @@ document.querySelector("#btn-reset").onclick = () => {
     document.querySelector("#count-display").innerHTML = " ";
 
 }
+
+document.querySelector("#btn-show-toys").onclick = (event) => {
+    const toys = ["ball", "skipping rope", "doll", "mini car", "elmo"];
+
+    event.currentTarget.disabled = true; //can only click this button once
+
+    //loop through toys
+    /*
+    for(let i=0; i<toys.length; i++){
+        console.log(toys[i]);
+    }
+    */
+    const ul = document.createElement("ul");
+    document.getElementById("display-toys").append(ul);
+
+    toys.forEach((toy, i)=>{
+        const li = document.createElement("li");
+        ul.append(li);
+        li.innerHTML = `${i+1}. ${toy}`;
+        console.log(`${i+1}. ${toy}`);
+    });
+    
+}
+
+document.getElementById("btn-show-toy-desc").onclick = () => {
+    const toys = [];
+    toys["ball"] = "An item to throw";
+    toys["doll"] = "An item to love";
+    toys["rope"] = "An item to exercise with";
+    toys["car"] = "An item to push around";
+    toys["lego"] = "An item to build with";
+
+    const section = document.getElementById("display-toy-descs");
+
+    for(let toy in toys){
+        const p = document.getElementById("p");
+        section.append(p);
+        p.innerHTML = `${toy}. ${toys[toy]}`;
+        p.onclick = () => {
+            document.getElementById("toy-message").innerHTML = 
+            `Best ${toy} Ever. ${toys[toy]}`
+        }
+    }
+};
+
+setInterval (() => {
+    const currentSlide = document.querySelector("#slideshow :not(.hidden)");
+    const nextSlide = currentSlide.nextElementSibling;
+    console.log(nextSlide);
+
+    if(nextSlide == null){
+        nextSlide = document.querySelector("#slideshow :first-child");
+    }
+
+    currentSlide.classList.add("hidden");
+    nextSlide.classList.remove("hidden");
+}, 1000);

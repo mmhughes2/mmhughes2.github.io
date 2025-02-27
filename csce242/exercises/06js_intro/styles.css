@@ -61,6 +61,12 @@ main {
     background:var(--gallery-color);
 }
 
+/* Slideshow */
+#slideshow img {
+    max-width: 100%;
+
+}
+
 .links {
     background:#D3DDEA;
 }
