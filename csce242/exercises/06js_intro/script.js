@@ -189,7 +189,7 @@ document.getElementById("btn-show-toy-desc").onclick = () => {
 
 setInterval (() => {
     const currentSlide = document.querySelector("#slideshow :not(.hidden)");
-    const nextSlide = currentSlide.nextElementSibling;
+    let nextSlide = currentSlide.nextElementSibling;
     console.log(nextSlide);
 
     if(nextSlide == null){
