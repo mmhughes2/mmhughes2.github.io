@@ -1,0 +1,42 @@
+body {
+    background-color: lightblue;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.column {
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+#main-header h1 {
+    text-align: center;
+    padding-left: 0;
+    background-color: darkblue;
+    color:white;
+    border-radius: 5px; 
+}
+
+hr.rounded {
+    border-top: 8px solid black;
+    border-radius: 5px;
+  }
+
+#main-footer {
+    text-align: center;
+}
+/* Typography*/
+body {
+    background-color:lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+}
+#main-content h2 {
+    text-align: center;
+}
+
+.centered-header {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0; /* Adds vertical space around the header */
+}
