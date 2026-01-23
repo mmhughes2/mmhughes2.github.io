@@ -7,6 +7,7 @@
 
 body {
     background: #f6f4dc;
+    margin: 0;
 }
 
 /* HEADER */
@@ -53,14 +54,16 @@ header h1 {
 .important {
     padding: 20px;
     color: #4b7b86;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 /* CARDS */
 .cards {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -74,7 +77,8 @@ header h1 {
     color: white;
     width: 100%;
     text-align: center;
-    padding: 8px;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
 }
 
 /* IDEAS SECTION */
@@ -130,6 +134,10 @@ footer {
     .cards {
         flex-direction: column;
         align-items: center;
+    }
+
+    .card{
+        margin-bottom: 25px;
     }
 
     .idea-row,
