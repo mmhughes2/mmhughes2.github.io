@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 body {
@@ -48,63 +47,91 @@ header h1 {
     border-left: 2px solid #6fa6a6;  /* left outline */
 }
 
-
-
-/* IMPORTANT TEXT */
+/* Important Text Box */
 .important {
     padding: 20px;
     color: #4b7b86;
-    font-size: 1.5em;
+    margin-left: auto
 }
 
-/* CARDS */
-.cards {
+/* Cards */
+.top-layout {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    background: #f3f3dc;
     padding: 20px;
-    flex-wrap: wrap;
 }
 
-.card {
+.important-box {
+    flex: 1;
+    color: #6f8c93;
+    padding: 20px;
+}
+
+.right-cards {
+    flex: 3;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
 }
 
-.card h3 {
-    background: #4b7b86;
-    color: white;
-    width: 100%;
+.mini-card {
     text-align: center;
-    padding: 10px 0;
-    margin: 0 0 10px 0;
+    flex-shrink: 0;
+}
+
+.mini-card h3 {
+    background: #6f8c93;
+    color: white;
+    padding: 8px;
+    width: 200px;
+}
+
+.img-box {
+    width: 200px;
+    height: 300px;
+    background: #b9cbc5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 /* IDEAS SECTION */
 .ideas {
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
 }
 
-.idea-row {
+.idea-row-1 {
     display: flex;
-    margin: 15px 0;
+    align-items: stretch;   
+    margin-bottom: 15px;
     background: #5f8891;
-    color: white;
 }
 
-.idea-row.reverse {
+.idea-row-reverse {
     flex-direction: row-reverse;
+    background: #99bbbb;
 }
 
 .image-box {
     padding: 15px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.15);
 }
 
 .text-box {
-    padding: 15px;
+    padding: 20px;
     flex: 1;
+    color: white;
+}
+
+.idea-row-reverse .text-box {
+    color: white;
 }
 
 /* FOOTER */
