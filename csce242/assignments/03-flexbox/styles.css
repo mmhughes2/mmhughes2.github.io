@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f6f4dc;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    background: #f6f4dc;
+    color: #4b7b86;
+    padding: 15px;
+}
+
+/* NAV */
+.nav-bar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar li {
+    flex: 1; /* makes all buttons equal width */
+}
+
+.nav-bar a {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #d88c8c;   /* pink */
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-right: 2px solid #6fa6a6; /* teal dividers */
+}
+
+.nav-bar li:first-child a {
+    border-left: 2px solid #6fa6a6;  /* left outline */
+}
+
+
+
+/* IMPORTANT TEXT */
+.important {
+    padding: 20px;
+    color: #4b7b86;
+    font-size: 1.3em;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h3 {
+    background: #4b7b86;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+}
+
+/* IDEAS SECTION */
+.ideas {
+    display: flex;
+    flex-direction: column;
+}
+
+.idea-row {
+    display: flex;
+    margin: 15px 0;
+    background: #5f8891;
+    color: white;
+}
+
+.idea-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-box {
+    padding: 15px;
+}
+
+.text-box {
+    padding: 15px;
+    flex: 1;
+}
+
+/* FOOTER */
+footer {
+    background: #e38b8b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;   /* stack vertically */
+    }
+
+    .nav-bar a {
+        border-right: none;       /* remove vertical dividers */
+        border-bottom: 2px solid #6fa6a6; /* horizontal teal lines */
+    }
+
+    .nav-bar li:first-child a {
+        border-top: 2px solid #6fa6a6;  /* top outline */
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .idea-row,
+    .idea-row.reverse {
+        flex-direction: column;
+    }
+}
