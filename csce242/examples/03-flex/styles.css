@@ -24,6 +24,13 @@ body {
 #main-footer {
 
 }
+/* Images */
+img {
+    max-width:100%;
+
+    /* Position absolute is in respect to the upper left hand corner */
+    position: absolute;
+}
 
 /* Gallery */
 #gallery section {
@@ -45,6 +52,11 @@ body {
 .item img {
     display:block;
     margin:auto;
+}
+/* Area */
+.area {
+    height:300px;
+    background: whitesmoke;
 }
 
 /* Navigation */
@@ -71,6 +83,12 @@ body {
 
 /* Larger devices */
 @media (min-width: 768px) {
+
+    #content {
+        justify-content: space-between;
+        gap: 2em;
+    }
+
     .columns {
         display:flex;
     }

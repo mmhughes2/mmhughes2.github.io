@@ -21,6 +21,14 @@ a {
     border-radius: 5px; 
 }
 
+#main-header h2 {
+    text-align: center;
+    padding-left: 0;
+    background-color: darkblue;
+    color:white;
+    border-radius: 5px; 
+}
+
 hr.rounded {
     border-top: 8px solid black;
     border-radius: 5px;
@@ -29,6 +37,7 @@ hr.rounded {
 #main-footer {
     text-align: center;
 }
+
 /* Typography*/
 body {
     background-color:lightblue;
