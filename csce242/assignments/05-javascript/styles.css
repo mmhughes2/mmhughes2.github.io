@@ -1,0 +1,97 @@
+:root {
+    --bg: #f0eee3;
+    --card: #e9e6d3;
+    --accent: #6b8f8a;
+    --border: #9bb5b0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: var(--bg);
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    color: var(--accent);
+}
+
+.subtitle {
+    color: #d16a6a;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.card {
+    background: var(--card);
+    border: 2px solid var(--border);
+    padding: 20px;
+    min-height: 320px;
+    cursor: pointer;
+}
+
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 120px solid #d47a7a;
+    margin: 30px auto;
+    display: none;
+}
+
+
+.date-box input {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.date-output {
+    margin-top: 15px;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+
+.frame-container {
+    display: inline-block;
+    padding: 8px;
+    border: 5px solid transparent;
+}
+
+.framed {
+    width: 160px;
+    cursor: pointer;
+}
+
+
+.frame-active {
+    border-top: 5px solid red;
+    border-right: 5px solid green;
+    border-bottom: 5px solid blue;
+    border-left: 5px solid purple;
+}
+
+footer {
+    margin-top: 30px;
+    color: var(--accent);
+}
