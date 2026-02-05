@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Assignment 7</title>
+<title>Assignment 5: Intro to JavaScript</title>
 <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<h1>Assignment 7</h1>
+<h1>Assignment 5</h1>
 <p class="subtitle">Introduction to JavaScript</p>
-
 <div class="container">
-
-    
 <div class="card" id="geometryCard">
 <h2>Geometry</h2>
 <div class="triangle" id="triangle"></div>
@@ -31,53 +26,13 @@
 
 <div id="frameBox" class="frame-container">
 <img id="sunImage" class="framed"
-src="https://i.imgur.com/5ZQ9zZq.png"
-alt="sun cartoon">
-</div>
-
+src="images/Sun.png" alt="sun cartoon">
 </div>
 </div>
-
+</div>
 <footer>
 @mackenziehughes.com
 </footer>
-
-<script>
-const triangle = document.getElementById("triangle");
-const geometryCard = document.getElementById("geometryCard");
-
-const datePicker = document.getElementById("datePicker");
-const dateMessage = document.getElementById("dateMessage");
-
-const sunImage = document.getElementById("sunImage");
-const frameBox = document.getElementById("frameBox");
-
-
-const showTriangle = () => {
-    triangle.style.display = "block";
-};
-
-geometryCard.addEventListener("click", showTriangle);
-
-
-const displayDate = (event) => {
-    const chosenDate = event.target.value;
-    if (chosenDate) {
-        const formatted = chosenDate.replace(/-/g, "/");
-        dateMessage.textContent = `You picked the date: ${formatted}`;
-    }
-};
-
-datePicker.addEventListener("change", displayDate);
-
-
-const changeImage = () => {
-    sunImage.src = "https://i.imgur.com/2ZqYk5H.png";
-    frameBox.classList.add("frame-active");
-};
-
-sunImage.addEventListener("click", changeImage);
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
