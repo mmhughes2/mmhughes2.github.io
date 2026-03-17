@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShelfSpace</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="topbar">
+      <div class="logo-wrap">
+        <i class="fa-solid fa-books"></i>
+        <span class="logo-text">ShelfSpace</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="csce242/project/part5/homepage/homepage.html">Home</a>
+        <a href="csce242/project/part5/myshelf/myshelf.html">My Shelf</a>
+        <a href="csce242/project/part5/explore/explore.html">Explore</a>
+        <a href="csce242/project/part5/profile/profile.html">Profile</a>
+        <a href="csce242/project/part5/about/about.html">About</a>
+      </nav>
+
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </header>
+
+    <!-- PROFILE -->
+    <section class="profile-card panel">
+      <div class="profile-left">
+        <img src="images/profile.png" alt="Sasha Jordan" class="profile-photo" />
+
+        <div class="profile-copy">
+          <h1>Sasha Jordan</h1>
+          <div class="handle">@BookishInBloom</div>
+          <p>
+            Book lover, rom-com enthusiast, searching for my<br />
+            next great read 📖💕
+          </p>
+        </div>
+      </div>
+
+      <button class="edit-profile-btn">Edit Profile</button>
+    </section>
+
+    <!-- FRIENDS + CLUBS -->
+    <section class="middle-row">
+      <aside class="friends-card panel">
+        <h2>Friends</h2>
+
+        <div class="friend-item">
+          <img src="images/friend1.png" alt="Victoria Anderson" />
+          <div>
+            <div class="friend-name">Victoria Anderson</div>
+            <div class="friend-handle">@FictionFlirt</div>
+          </div>
+        </div>
+
+        <div class="friend-item">
+          <img src="images/friend2.png" alt="Michael Taylor" />
+          <div>
+            <div class="friend-name">Michael Taylor</div>
+            <div class="friend-handle">@PlotTwistKing</div>
+          </div>
+        </div>
+
+        <div class="friend-item">
+          <img src="images/friend3.png" alt="Fernando Suarez" />
+          <div>
+            <div class="friend-name">Fernando Suarez</div>
+            <div class="friend-handle">@CoffeeandChapters</div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="clubs-card panel">
+        <h2>Reading Clubs</h2>
+
+        <div class="clubs-layout">
+          <div class="club-book">
+            <img src="images/club1.png" alt="Romance Reads Club" />
+          </div>
+
+          <div class="club-book">
+            <img src="images/club2.png" alt="Mystery and Thriller Society" />
+          </div>
+
+          <div class="add-group">
+            <span>Add New Group</span>
+            <button class="add-btn" id="addGroupBtn" aria-label="Add new group">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- CHAT -->
+    <section class="chat-card panel">
+      <div class="chat-header">
+        <div class="chat-title">Chat 📖</div>
+        <div class="chat-group-name">Fantasy &amp; Fables Guild</div>
+      </div>
+
+      <div class="chat-body" id="chatBody">
+        <div class="message-row row-left first-row">
+          <div class="user-icon purple">
+            <i class="fa-regular fa-user"></i>
+          </div>
+
+          <div class="bubble bubble-purple">
+            Hey Everyone! How’s your reading<br />
+            going? Any recommendations?
+          </div>
+        </div>
+
+        <div class="message-row row-left second-row">
+          <div class="user-icon tan">
+            <i class="fa-regular fa-user"></i>
+          </div>
+
+          <div class="message-with-book">
+            <div class="bubble bubble-orange">
+              Hey Guys! Just finished reading<br />
+              Children of Blood and Bone by Tomi<br />
+              Adeyemi. It’s a dazzling, fast-paced<br />
+              fantasy where magic, oppression,<br />
+              love, and rebellion ignite<br />
+              unforgettable change.
+            </div>
+
+            <img
+              src="images/book1.png"
+              alt="Children of Blood and Bone"
+              class="inline-book top-book"
+            />
+          </div>
+        </div>
+
+        <div class="message-row row-right third-row">
+          <div class="message-with-book reverse">
+            <img
+              src="images/book2.jpg"
+              alt="The Priory of the Orange Tree"
+              class="inline-book bottom-book"
+            />
+
+            <div class="bubble bubble-blue">
+              Finished Children of Blood and Bone<br />
+              last week. 10/10 read. Would also<br />
+              suggest the Priory of the Orange<br />
+              Tree.
+            </div>
+          </div>
+
+          <div class="user-icon blue">
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <!-- INPUT / KEYBOARD MOCKUP -->
+      <div class="keyboard-shell">
+        <div class="chat-input-bar">
+          <button class="input-side-btn plus-btn" aria-label="Add">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+
+          <input
+            id="chatInput"
+            type="text"
+            placeholder="Type your message..."
+          />
+
+          <button class="input-side-btn" aria-label="Image">
+            <i class="fa-regular fa-camera"></i>
+          </button>
+
+          <button class="input-side-btn" aria-label="Voice">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+
+          <button class="send-btn" id="sendBtn">Send</button>
+        </div>
+
+        <div class="quick-actions">
+          <button class="chip">📖&nbsp; Recommend a Book &nbsp;›</button>
+          <button class="chip">📖&nbsp; 😍 🧡 &nbsp;+ Read Next</button>
+          <button class="mini-icon"><i class="fa-regular fa-camera"></i></button>
+          <button class="mini-icon"><i class="fa-regular fa-microphone"></i></button>
+          <button class="mini-icon"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+
+        <div class="keyboard">
+          <div class="kb-row">
+            <button>Q</button><button>W</button><button>E</button><button>R</button><button>T</button><button>Y</button><button>U</button><button>I</button><button>O</button><button>P</button><button>O</button><button>!</button><button>!</button><button>!</button>
+          </div>
+
+          <div class="kb-row">
+            <button class="indent">A</button><button>S</button><button>D</button><button>F</button><button>G</button><button>H</button><button>J</button><button>K</button><button>L</button><button>;</button><button>"</button><button class="wide">↩</button>
+          </div>
+
+          <div class="kb-row">
+            <button class="num">123</button><button>Z</button><button>X</button><button>C</button><button>V</button><button>B</button><button>N</button><button>M</button><button>&lt;</button><button>,</button><button>’</button><button class="wide">↩</button>
+          </div>
+
+          <div class="kb-row bottom">
+            <button class="small">🌐</button>
+            <button class="small">☺</button>
+            <button class="small">🎙</button>
+            <button class="space">space</button>
+            <button class="small"></button>
+            <button class="small"></button>
+            <button class="small">.</button>
+            <button class="small">▴</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-brand">SHELFSPACE</div>
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">Download</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

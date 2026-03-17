@@ -1,1 +1,147 @@
-Hi World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShelfSpace</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    📚 <span>ShelfSpace</span>
+  </div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">My Shelf</a>
+    <a href="#">Explore</a>
+    <a href="#">Profile</a>
+    <a href="#">About</a>
+  </nav>
+
+  <div class="socials">
+    <span>📷</span>
+    <span>in</span>
+    <span>X</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Track your reading your way</h1>
+  <p>
+    Welcome to your personal corner of the reading world. ShelfSpace lets you
+    track your progress while curating a bookshelf that feels just as cozy as your
+    favorite reading spot.
+  </p>
+</section>
+
+<!-- DASHBOARD -->
+<section class="dashboard">
+
+  <!-- CURRENTLY READING -->
+  <div class="card reading-card">
+    <h3>Currently Reading...</h3>
+
+    <div class="reading-content">
+      <img src="images/current-book.jpg" class="book-cover"/>
+
+      <div class="progress-info">
+        <p>Page 209 of 336</p>
+        <div class="progress-bar">
+          <div class="fill" style="width: 62%"></div>
+        </div>
+
+        <p>Chapter 12 of 20</p>
+        <div class="progress-bar">
+          <div class="fill purple" style="width: 60%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="card stats-card">
+    <div class="circle">
+      <span>28 Books</span>
+      <small>70% of Goal</small>
+    </div>
+
+    <p class="streak">Reading Streak <strong>15 days</strong></p>
+
+    <div class="progress-bar">
+      <div class="fill" style="width: 50%"></div>
+    </div>
+
+    <button>Edit Goal</button>
+  </div>
+
+</section>
+
+<!-- BOOKSHELF -->
+<section class="bookshelf">
+
+  <h2>My Bookshelf</h2>
+  <p>Organize what you are currently reading, rate your reads, and add new books</p>
+
+  <div class="shelf-section">
+    <img src="images/bookshelf.png" class="shelf-img"/>
+
+    <div class="notes">
+      <h3>Reading Notes</h3>
+      <textarea placeholder="Write notes..."></textarea>
+      <button>Save Notes</button>
+    </div>
+  </div>
+
+</section>
+
+<!-- BOOK LIST -->
+<section class="book-list">
+
+  <div class="list-controls">
+    <input type="text" placeholder="Search" />
+    <button class="purple">Add Books</button>
+    <button class="orange">Filter ▾</button>
+  </div>
+
+  <div class="book-item">
+    <img src="images/book-honey-spice.jpg">
+    <div>
+      <h3>Honey & Spice</h3>
+      <p>By Bolu Babalola</p>
+    </div>
+  </div>
+
+  <div class="book-item">
+    <img src="images/book-bluest-eye.jpg">
+    <div>
+      <h3>The Bluest Eye</h3>
+      <p>By Toni Morrison</p>
+    </div>
+  </div>
+
+  <div class="book-item">
+    <img src="images/book-emmett-till.jpg">
+    <div>
+      <h3>The Blood of Emmett Till</h3>
+      <p>By Timothy B. Tyson</p>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <h1>SHELFSPACE</h1>
+  <div>
+    <span>Contact</span>
+    <span>Download</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
