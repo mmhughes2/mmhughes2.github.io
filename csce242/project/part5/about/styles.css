@@ -172,7 +172,9 @@ a {
   height: auto;
   aspect-ratio: 734 / 495;
   object-fit: cover;
-  border-radius: var(--radius-image);
+  object-position: center top;
+  border-radius: 8px;
+  background: #f1f1ed;
   box-shadow: var(--shadow-soft);
 }
 
@@ -236,6 +238,7 @@ a {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: center top;
   border-radius: 8px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
 }
