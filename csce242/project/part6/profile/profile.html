@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShelfSpace | Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="../hompage/homepage.html" aria-label="ShelfSpace home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64">
+            <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round">
+              <path d="M12 18 31 11l21 7-21 7-19-7Z"/>
+              <path d="M12 29 31 22l21 7-21 7-19-7Z"/>
+              <path d="M12 40 31 33l21 7-21 7-19-7Z"/>
+              <path d="M10 18v22"/>
+              <path d="M31 11v29"/>
+              <path d="M52 18v22"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-text">ShelfSpace</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="../hompage/homepage.html">Home</a>
+        <a href="../myshelf/myshelf.html">My Shelf</a>
+        <a href="../explore/explore.html">Explore</a>
+        <a href="profile.html" class="active">Profile</a>
+        <a href="../about/about.html">About</a>
+      </nav>
+
+      <div class="socials">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <circle cx="17.6" cy="6.4" r="1"></circle>
+          </svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+            <path d="M8 10v7"></path>
+            <circle cx="8" cy="7.5" r="1"></circle>
+            <path d="M12 17v-4.1c0-1.7 1-2.4 2.1-2.4 1.2 0 1.9 2.3V17"></path>
+          </svg>
+        </a>
+        <a href="#" aria-label="X">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 4l16 16"></path>
+            <path d="M20 4 4 20"></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="profile-card panel">
+        <div class="profile-left">
+          <img src="images/profile.png" alt="Sasha Jordan" class="profile-photo">
+
+          <div class="profile-copy">
+            <h1>Sasha Jordan</h1>
+            <div class="handle">@BookishInBloom</div>
+            <p>Book lover, rom-com enthusiast, searching for my next great read.</p>
+          </div>
+        </div>
+
+        <button class="edit-profile-btn" type="button">Edit Profile</button>
+      </section>
+
+      <section class="middle-row">
+        <aside class="friends-card panel">
+          <h2>Friends</h2>
+
+          <div class="friend-item">
+            <img src="images/friend1.png" alt="Victoria Anderson">
+            <div>
+              <div class="friend-name">Victoria Anderson</div>
+              <div class="friend-handle">@FictionFlirt</div>
+            </div>
+          </div>
+
+          <div class="friend-item">
+            <img src="images/friend2.png" alt="Michael Taylor">
+            <div>
+              <div class="friend-name">Michael Taylor</div>
+              <div class="friend-handle">@PlotTwistKing</div>
+            </div>
+          </div>
+
+          <div class="friend-item">
+            <img src="images/friend3.png" alt="Fernando Suarez">
+            <div>
+              <div class="friend-name">Fernando Suarez</div>
+              <div class="friend-handle">@CoffeeandChapters</div>
+            </div>
+          </div>
+        </aside>
+
+        <section class="clubs-card panel">
+          <h2>Reading Clubs</h2>
+
+          <div class="clubs-layout">
+            <div class="club-book">
+              <img src="images/club1.png" alt="Romance Reads Club">
+            </div>
+
+            <div class="club-book">
+              <img src="images/club2.png" alt="Mystery and Thriller Society">
+            </div>
+
+            <div class="add-group">
+              <span>Add New Group</span>
+              <button class="add-btn" type="button" aria-label="Add new group">+</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="chat-card panel">
+        <div class="chat-header">
+          <div class="chat-title">Chat</div>
+          <div class="chat-group-name">Fantasy &amp; Fables Guild</div>
+        </div>
+
+        <div class="chat-body">
+          <div class="message-row row-left first-row">
+            <div class="user-icon">U</div>
+            <div class="bubble bubble-purple">Hey Everyone! How&apos;s your reading going? Any recommendations?</div>
+          </div>
+
+          <div class="message-row row-left second-row">
+            <div class="user-icon">U</div>
+
+            <div class="message-with-book">
+              <div class="bubble bubble-orange">
+                Hey Guys! Just finished reading Children of Blood and Bone by Tomi Adeyemi.
+                It&apos;s a dazzling, fast-paced fantasy where magic, oppression, love, and rebellion
+                ignite unforgettable change.
+              </div>
+
+              <img src="images/book1.png" alt="Children of Blood and Bone" class="inline-book top-book">
+            </div>
+          </div>
+
+          <div class="message-row row-right third-row">
+            <div class="message-with-book reverse">
+              <img src="images/book2.jpg" alt="The Priory of the Orange Tree" class="inline-book bottom-book">
+
+              <div class="bubble bubble-blue">
+                Finished Children of Blood and Bone last week. 10/10 read.
+                Would also suggest the Priory of the Orange Tree.
+              </div>
+            </div>
+
+            <div class="user-icon">U</div>
+          </div>
+        </div>
+
+        <div class="keyboard-shell">
+          <div class="chat-input-bar">
+            <button class="input-side-btn plus-btn" type="button">+</button>
+            <input id="chatInput" type="text" placeholder="Type your message...">
+            <button class="input-side-btn" type="button">O</button>
+            <button class="input-side-btn" type="button">M</button>
+            <button class="send-btn" id="sendBtn" type="button">Send</button>
+          </div>
+
+          <div class="quick-actions">
+            <button class="chip" type="button">Book Recommend ></button>
+            <button class="chip" type="button">Read Next Prompt</button>
+            <button class="mini-icon" type="button">O</button>
+            <button class="mini-icon" type="button">M</button>
+            <button class="mini-icon" type="button">V</button>
+          </div>
+
+          <div class="keyboard">
+            <div class="kb-row">
+              <button type="button">Q</button><button type="button">W</button><button type="button">E</button><button type="button">R</button><button type="button">T</button><button type="button">Y</button><button type="button">U</button><button type="button">I</button><button type="button">O</button><button type="button">P</button><button type="button">!</button><button type="button">!</button><button type="button">!</button>
+            </div>
+
+            <div class="kb-row">
+              <button type="button" class="indent">A</button><button type="button">S</button><button type="button">D</button><button type="button">F</button><button type="button">G</button><button type="button">H</button><button type="button">J</button><button type="button">J</button><button type="button">K</button><button type="button">L</button><button type="button">;</button><button type="button">:</button><button type="button" class="wide">Enter</button>
+            </div>
+
+            <div class="kb-row">
+              <button type="button" class="num">123</button><button type="button">Z</button><button type="button">X</button><button type="button">C</button><button type="button">V</button><button type="button">B</button><button type="button">N</button><button type="button">M</button><button type="button">&lt;</button><button type="button">'</button><button type="button">'</button><button type="button" class="wide">Enter</button>
+            </div>
+
+            <div class="kb-row bottom">
+              <button type="button" class="small">O</button>
+              <button type="button" class="small">:)</button>
+              <button type="button" class="small">M</button>
+              <button type="button" class="space">space</button>
+              <button type="button" class="small"></button>
+              <button type="button" class="small"></button>
+              <button type="button" class="small">.</button>
+              <button type="button" class="small">&gt;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">SHELFSPACE</div>
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">Download</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

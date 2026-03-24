@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShelfSpace | My Shelf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="../hompage/homepage.html" aria-label="ShelfSpace home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64">
+            <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round">
+              <path d="M12 18 31 11l21 7-21 7-19-7Z"/>
+              <path d="M12 29 31 22l21 7-21 7-19-7Z"/>
+              <path d="M12 40 31 33l21 7-21 7-19-7Z"/>
+              <path d="M10 18v22"/>
+              <path d="M31 11v29"/>
+              <path d="M52 18v22"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-text">ShelfSpace</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="../hompage/homepage.html">Home</a>
+        <a href="myshelf.html" class="active">My Shelf</a>
+        <a href="../explore/explore.html">Explore</a>
+        <a href="../profile/profile.html">Profile</a>
+        <a href="../about/about.html">About</a>
+      </nav>
+
+      <div class="socials" aria-label="Social media">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <circle cx="17.6" cy="6.4" r="1"></circle>
+          </svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+            <path d="M8 10v7"></path>
+            <circle cx="8" cy="7.5" r="1"></circle>
+            <path d="M12 17v-4.1c0-1.7 1-2.4 2.1-2.4 1.2 0 1.9 2.3V17"></path>
+          </svg>
+        </a>
+        <a href="#" aria-label="X">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 4l16 16"></path>
+            <path d="M20 4 4 20"></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-inner">
+          <h1>Track your reading your way</h1>
+          <p>
+            Welcome to your personal corner of the reading world. ShelfSpace lets you
+            track your progress while curating a bookshelf that feels just as cozy as your
+            favorite reading spot. Slow down, savor your stories, and watch your literary
+            universe bloom in a space made just for you.
+          </p>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel currently-reading">
+            <h2>Currently Reading...</h2>
+            <div class="reading-layout">
+              <img src="images/current-book.jpg" alt="The Let Them Theory book cover" class="reading-cover">
+
+              <div class="progress-stack">
+                <div class="progress-group">
+                  <h3>Page 209 of 336</h3>
+                  <div class="progress-track"><span style="width: 62%;"></span></div>
+                </div>
+
+                <div class="progress-group">
+                  <h3>Chapter 12 of 20</h3>
+                  <div class="progress-track"><span style="width: 60%;"></span></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel stats-card">
+            <div class="ring-wrap">
+              <div class="goal-ring"></div>
+              <div class="goal-copy">
+                <strong>28 Books</strong>
+                <span>70% of Goal</span>
+              </div>
+            </div>
+
+            <div class="streak-row">
+              <span>Reading Streak</span>
+              <strong>15 days</strong>
+            </div>
+
+            <div class="progress-track compact"><span style="width: 78%;"></span></div>
+
+            <button class="accent-button" type="button">Edit Goal</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="shelf-section">
+        <div class="section-head">
+          <h2>My Bookshelf</h2>
+          <p>Organize what you are currently reading, rate your reads, and add new books</p>
+        </div>
+
+        <div class="shelf-layout">
+          <div class="bookshelf-art">
+            <img src="images/bookshelf.png" alt="Books lined up on a shelf">
+          </div>
+
+          <aside class="panel notes-panel">
+            <h3>Reading Notes</h3>
+            <textarea placeholder="Write notes..."></textarea>
+            <button class="save-button" type="button">Save Notes</button>
+          </aside>
+        </div>
+      </section>
+
+      <section class="panel list-panel">
+        <div class="list-controls">
+          <label class="search-field">
+            <span class="search-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="6.3"></circle>
+                <path d="M16 16l4.5 4.5"></path>
+              </svg>
+            </span>
+            <input type="search" placeholder="Search">
+            <span class="clear-mark" aria-hidden="true">&times;</span>
+          </label>
+
+          <button class="accent-button" type="button">Add Books</button>
+          <button class="filter-button" type="button">Filter <span aria-hidden="true">v</span></button>
+        </div>
+
+        <div class="book-list">
+          <article class="book-row">
+            <img src="images/book-honey-spice.jpg" alt="Honey and Spice book cover">
+            <div>
+              <h3>Honey &amp; Spice</h3>
+              <p>By Bolu Babalola</p>
+            </div>
+          </article>
+
+          <article class="book-row">
+            <img src="images/book-bluest-eye.jpg" alt="The Bluest Eye book cover">
+            <div>
+              <h3>The Bluest Eye</h3>
+              <p>By Toni Morrison</p>
+            </div>
+          </article>
+
+          <article class="book-row">
+            <img src="images/book-emmett-till.jpg" alt="The Blood of Emmett Till book cover">
+            <div>
+              <h3>The Blood of Emmett Till</h3>
+              <p>By Timothy B. Tyson</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-wordmark">SHELFSPACE</div>
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">Download</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
