@@ -38,6 +38,69 @@ hr.rounded {
     text-align: center;
 }
 
+.system-diagram {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.diagram-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* LEFT + RIGHT TEXT */
+.diagram-side {
+    width: 200px;
+    font-size: 14px;
+    color: #555;
+}
+
+.diagram-side.left {
+    text-align: right;
+}
+
+.diagram-side.right {
+    text-align: left;
+}
+
+/* CENTER BOX */
+.diagram-center {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    background: #f9f9f9;
+}
+
+/* PREVIEW BOX */
+.preview-box {
+    background: #eaeaea;
+    border-radius: 15px;
+    padding: 40px 10px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* LINKS */
+.diagram-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.diagram-links a {
+    text-decoration: none;
+    color: #2a5bd7;
+    font-weight: bold;
+}
+
+.diagram-links a:hover {
+    text-decoration: underline;
+}
+
 /* Typography*/
 body {
     background-color:lightblue;
